@@ -255,6 +255,12 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **Vercel** for seamless deployment platform
 - **Vision Transformer** research for advanced image analysis techniques
 
+## 👨‍💻 Author
+
+**Urvashi Agrawal**
+- GitHub: [@urvashi-agrawal-dev](https://github.com/urvashi-agrawal-dev)
+- Email: urvashi.agrawal.dev@gmail.com
+
 ## 📞 Support
 
 For support, email urvashi.agrawal.dev@gmail.com or create an issue in this repository.
