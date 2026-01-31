@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: 'Deepfake Detection System | AI-Powered Video Analysis',
   description: 'Advanced AI-powered deepfake detection system using ResNeXt + LSTM architecture. Detect manipulated videos with 93%+ accuracy.',
   keywords: 'deepfake, detection, AI, machine learning, video analysis, fake video',
-  authors: [{ name: 'Varun Gupta' }],
+  authors: [{ name: 'Urvashi Agrawal' }],
   openGraph: {
     title: 'Deepfake Detection System',
     description: 'AI-powered deepfake detection with 93%+ accuracy',

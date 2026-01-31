@@ -5,7 +5,7 @@
 ### 📱 **Current Working Localhost Setup**
 - **Frontend**: http://localhost:3000 (Next.js with TypeScript)
 - **Backend**: http://localhost:8000 (FastAPI with Python)
-- **Author**: Urvashi Agrawal (Varun Gupta removed)
+- **Author**: Urvashi Agrawal
 
 ### 🎯 **Exact Features Working on Localhost**
 - ✅ **Video Deepfake Detection**: Upload MP4, AVI, MOV, MKV, WebM files
