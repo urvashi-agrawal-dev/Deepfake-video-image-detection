@@ -1,4 +1,4 @@
-// File: C:\Users\gupta\Desktop\T87-Deepfake-Video-Detection-System-backend - Copy\T87-Deepfake-Video-Detection-System-backend\app\layout.tsx
+// File: C:\Users\oasis\Global-AI-Summit\app\layout.tsx
 import * as entry from '../../../app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

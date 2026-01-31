@@ -1,4 +1,4 @@
-// File: C:\Users\gupta\Desktop\T87-Deepfake-Video-Detection-System-backend - Copy\T87-Deepfake-Video-Detection-System-backend\app\api\predict\route.ts
+// File: C:\Users\oasis\Global-AI-Summit\app\api\predict\route.ts
 import * as entry from '../../../../../app/api/predict/route.js'
 import type { NextRequest } from 'next/server.js'
 

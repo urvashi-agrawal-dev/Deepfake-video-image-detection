@@ -11,11 +11,67 @@ import FeatureCard from './components/FeatureCard'
 export interface DetectionResult {
   output: 'REAL' | 'FAKE'
   confidence: number
+  raw_confidence?: number
+  probabilities?: {
+    real: number
+    fake: number
+  }
+  analysis?: {
+    frames_extracted?: number
+    faces_detected?: number
+    frame_quality?: number
+    face_detection_confidence?: number
+    temporal_consistency?: number
+    compression_artifacts?: number
+    image_dimensions?: string
+    face_quality?: number
+    image_quality?: number
+    edge_consistency?: number
+    color_distribution?: number
+    warning_flags?: string[]
+    suspicious_score?: number
+    frame_analysis?: Array<{
+      frame_id: number
+      faces_detected: number
+      faces_analysis?: Array<{
+        face_id: number
+        is_fake: boolean
+        confidence: number
+        suspicious_score?: number
+        reasons?: string[]
+        authenticity_indicators?: string[]
+        detailed_explanation?: string
+        bbox?: number[]
+        analysis_details?: any
+      }>
+      note?: string
+    }>
+    image_analysis?: {
+      faces_detected: number
+      faces_analysis: Array<{
+        face_id: number
+        is_fake: boolean
+        confidence: number
+        suspicious_score?: number
+        reasons?: string[]
+        authenticity_indicators?: string[]
+        detailed_explanation?: string
+        bbox?: number[]
+      }>
+      detection_note?: string
+    }
+  }
   preprocessed_images: string[]
   faces_cropped_images: string[]
-  original_video: string
+  original_video?: string
+  original_image?: string
   processing_time?: number
   frames_analyzed?: number
+  detection_method?: string
+  model_version?: string
+  model_type?: string
+  file_type?: string
+  note?: string
 }
 
 export default function Home() {
@@ -51,7 +107,7 @@ export default function Home() {
             </h1>
             
             <p className="text-xl md:text-2xl text-purple-200 max-w-3xl mx-auto mb-8">
-              Advanced AI-powered system to detect manipulated videos using cutting-edge deep learning technology
+              Advanced AI-powered system to detect manipulated videos and images using cutting-edge deep learning technology
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -78,7 +134,7 @@ export default function Home() {
             <FeatureCard
               icon={<Shield className="w-12 h-12 text-purple-400" />}
               title="High Accuracy"
-              description="93%+ accuracy with advanced ResNeXt + LSTM architecture trained on thousands of videos"
+              description="Advanced Vision Transformer architecture with multi-modal analysis for both videos and images"
             />
             <FeatureCard
               icon={<Zap className="w-12 h-12 text-purple-400" />}
@@ -88,7 +144,7 @@ export default function Home() {
             <FeatureCard
               icon={<Video className="w-12 h-12 text-purple-400" />}
               title="Multi-format Support"
-              description="Supports MP4, AVI, MOV, MKV and more video formats up to 100MB"
+              description="Supports videos (MP4, AVI, MOV, MKV) and images (JPG, PNG, WEBP) up to 100MB"
             />
           </motion.div>
 
