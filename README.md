@@ -32,11 +32,6 @@ An advanced AI-powered deepfake detection system that analyzes videos and images
 - **Interactive Results**: Detailed results with downloadable reports
 - **Dark Theme**: Modern glassmorphism design with purple gradient theme
 
-## 🚀 Live Demo
-
-**Frontend**: [https://deepfake-detection-frontend.vercel.app](https://deepfake-detection-frontend.vercel.app)
-**Backend API**: [https://deepfake-detection-api.vercel.app](https://deepfake-detection-api.vercel.app)
-
 ## 🛠️ Technology Stack
 
 ### Frontend
